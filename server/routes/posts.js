@@ -1,10 +1,13 @@
 var express = require('express')
+var getPosts = require('../controllers/posts')
+var createPost = require('../controllers/posts')
+
 var router = express.Router()
 
 
-router.get('/', (req, res) => {
-    res.send('THIS WORKS!')
-});
+router.get('/', getPosts);
+router.post('/', createPost);
+
 
 
 module.exports = router
