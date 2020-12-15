@@ -20,7 +20,7 @@ const Form = () => {
     }
     return (
         <Paper className={classes.paper}>
-            <Form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
+            <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
                 <Typography variant="h6">
                     Creating a Memory
                 </Typography>
@@ -37,7 +37,7 @@ const Form = () => {
                 <Button variant="contained" color="secondary" size="small" onClick={clear} fullWidth >
                     Clear
                 </Button>
-            </Form>
+            </form>
         </Paper>
     )
 }
